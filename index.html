@@ -100,6 +100,30 @@
             color: inherit;
             text-decoration: none;
           }
+
+          body {
+            background-image: url("ur_album_cover.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: white;
+          }
+
+          body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.82);
+            z-index: 0;
+          }
+
+          .container {
+            position: relative;
+            z-index: 1;
+          }
         </style>  
        </head>  
        <body>
@@ -118,6 +142,9 @@
           <p class="section-title">LIVE</p>
           <div class="video-wrap">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/e73U42xKvM8?si=L5qUPN7Mr-os8hfW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jxqws-q7WaE?si=mWMpnlwT2lmWjr7-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
           <div class="info-block">
